@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.chrome.service import Service
 
-service = Service('/Users/svetlanalevinsohn/JobEasy/13-python-selenium-automation/chromedriver')
+service = Service('/Users/svetlanalevinsohn/JobEasy/13-python/chromedriver')
 driver = webdriver.Chrome(service=service)
 
 driver.get('https://www.amazon.com/')
