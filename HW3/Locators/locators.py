@@ -17,4 +17,5 @@ driver.get('https://www.amazon.com/ap/register?openid.identity=http%3A%2F%2Fspec
 # driver.find_element(By.ID, 'ap_password_check').click()
 # driver.find_element(By.ID, 'continue').click()
 # driver.find_element(By.XPATH, "//a[contains(@href, 'condition')]").click()
-driver.find_element(By.XPATH, "//a[contains(@href, 'register_notification_p')]").click()
+# driver.find_element(By.XPATH, "//a[contains(@href, 'register_notification_p')]").click()
+driver.find_element(By.XPATH, "//a[contains(@href, '/a')]").click()
