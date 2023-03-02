@@ -8,13 +8,12 @@ from behave import given, when, then
 def open_amazon(context):
     context.driver.get('https://www.amazon.com/')
 
-
 @when('Click Orders into search field')
 def click_order(context):
     context.driver.find_element(By.ID, 'nav-orders').click()
 
 
-@then('Verify {expected_result} is shown')
+@when('Verify {expected_result} is shown')
 def verify_prompt(context, expected_result):
     actual_result = context.driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
     assert expected_result == actual_result
