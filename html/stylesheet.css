@@ -1,6 +1,24 @@
+body{
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=980:*")
+}
+
+.custom_style{
+    padding: 50px;
+    scale: 125%;
+}
+
+.ing {
+    color: papayawhip;
+}
+
+.background_color{
+    background-color: aqua;
+    font-size: 20px;
+}
+
 h2 {
-    color: red;
+    color: blue;
 }
 h1 {
-
+font-size: 100px;
 }
