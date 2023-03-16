@@ -3,7 +3,7 @@ def total_sum(n):
     print(total)
 
 
-total_sum(90)
+total_sum(9)
 
 
 def highest_num(x, y, z):
