@@ -14,17 +14,17 @@ driver.implicitly_wait(4)
 SEARCH_INPUT = (By.ID, 'twotabsearchtextbox')
 
 
-@given('Open Amazons page')
-def open_amazon(context):
-    context.driver.get('https://www.amazon.com/')
+# @given('Open Amazons page')
+# def open_amazon(context):
+#     context.driver.get('https://www.amazon.com/')
 
 
-@when('Input {search_word} into search field')
-def input_search(context, search_word):
-    context.driver.wait.until(EC.visibility_of_element_located(SEARCH_INPUT))
-    search = context.driver.find_element(*SEARCH_INPUT)
-    search.clear()
-    search.send_keys(search_word)
+# @when('Input {search_word} into search field')
+# def input_search(context, search_word):
+#     context.driver.wait.until(EC.visibility_of_element_located(SEARCH_INPUT))
+#     search = context.driver.find_element(*SEARCH_INPUT)
+#     search.clear()
+#     search.send_keys(search_word)
 
 
 @when('open Video Games page')

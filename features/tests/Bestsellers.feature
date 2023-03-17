@@ -3,6 +3,6 @@ Feature: Checking bestsellers page
 
 
   Scenario: Verify Bestsellers links
-    Given Open Amazon page
+    Given Open Amazon
     When Bestsellers is clicked
     Then Verify 5 links are shown

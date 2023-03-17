@@ -10,7 +10,7 @@ def click_orders(context):
 
 @then('Verify {sign_in} page opened')
 def signin_verification(context, sign_in):
-    context.app.verification_page.signin_verification()
+    context.app.signin_page.signin_verification()
 
 # expected_result = 'Sign in'
 # actual_result = driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text

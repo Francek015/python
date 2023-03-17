@@ -19,10 +19,10 @@ def verify_user_can_select_options(context):
 
     all_selections = context.driver.find_elements(*SELECTION_OPTIONS)
     print(f'all selections: {all_selections}')
-    expected_result = ['Apricot', 'Dustyblue', 'Khaki', 'Offwhite', 'Purple']
+    expected_result = ['Apricot', 'Dustyblue', 'Khaki', 'Offwhite', 'Peagreen']
 
     actual_selected = []
-    for item in all_selections[:5]:
+    for item in all_selections[:6]:
         item.click()
         current_color = context.driver.find_element(*CURRENT_OPTION).text
         print(f'current color: {current_color}')

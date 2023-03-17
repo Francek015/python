@@ -19,4 +19,4 @@ def click_cart(context):
 def verify_empty_cart(context, expected_result):
     # actual_result = context.driver.find_element(By.XPATH, "//div[contains(@class, 'sc-y')]").text
     # assert actual_result == expected_result
-    context.app.verification_page.cart_items_total(expected_result)
+    context.app.cart_items_page.cart_items_total(expected_result)

@@ -5,7 +5,7 @@ from behave import given, when, then
 
 
 
-@given('Open Amazon page')
+@given('Open Amazon')
 def open_amazon(context):
     context.driver.get('https://www.amazon.com/gp/bestsellers/?ref_=nav_cs_bestsellers')
 
