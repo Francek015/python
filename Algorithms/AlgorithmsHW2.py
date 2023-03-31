@@ -13,7 +13,7 @@ print(reversed_string)
 def confirm_duplicates(string):
     return len(set(string)) < len(string)
 
-print(confirm_duplicates('asdf'))
+print(confirm_duplicates('asdff'))
 
 
 
