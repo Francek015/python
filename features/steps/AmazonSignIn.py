@@ -12,6 +12,17 @@ def click_orders(context):
 def signin_verification(context, sign_in):
     context.app.signin_page.signin_verification()
 
+
+@when('Hover over language options')
+def hover_lang_options(context):
+    context.app.header.hover_lang_options()
+
+
+@then('Verify Spanish option present')
+def verify_lang_options_shown(context):
+    context.app.header.verify_lang_shown()
+
+
 # expected_result = 'Sign in'
 # actual_result = driver.find_element(By.XPATH, "//h1[@class='a-spacing-small']").text
 # print(actual_result)

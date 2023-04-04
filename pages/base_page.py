@@ -37,7 +37,7 @@ class Page:
     def wait_for_element_disappear(self, *locator):
         self.wait.until(EC.invisibility_of_element(locator))
 
-    def wiat_for_element_appear(self, *locator):
+    def wait_for_element_appear(self, *locator):
         self.wait.until(EC.presence_of_element_located(locator))
 
     def verify_text(self, expected_text, *locator):
