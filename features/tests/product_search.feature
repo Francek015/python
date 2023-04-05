@@ -8,7 +8,14 @@ Feature: Test Scenarios for Search functionality
 ###    Then Product results for watches are shown
 
 
-  Scenario: Verify cart login
+#  Scenario: Verify cart login
+#    Given Open Amazon page
+#    When Orders clicked
+#    Then Verify  Sign in  page opened
+
+  Scenario: User can select and search in a department
     Given Open Amazon page
-    When Orders clicked
-    Then Verify  Sign in  page opened
+    When Select department by alias stripbooks-intl-ship
+    When Input watches into search field
+    When Click on search icon
+    Then Verify books department is selected

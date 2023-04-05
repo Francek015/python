@@ -14,10 +14,6 @@ driver.implicitly_wait(4)
 SEARCH_INPUT = (By.ID, 'twotabsearchtextbox')
 
 
-# @given('Open Amazons page')
-# def open_amazon(context):
-#     context.driver.get('https://www.amazon.com/')
-
 
 # @when('Input {search_word} into search field')
 # def input_search(context, search_word):

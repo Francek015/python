@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 from behave import given, when, then
 
 
-
 @when('Orders clicked')
 def click_orders(context):
     context.app.header.click_orders()
@@ -18,9 +17,31 @@ def hover_lang_options(context):
     context.app.header.hover_lang_options()
 
 
+@when('Hover over account')
+def hover_account_options(context):
+    context.app.header.hover_account_options()
+
+
+@when('Select department by alias {alias}')
+def select_department(context, alias):
+    context.app.header.select_department(alias)
+
+
 @then('Verify Spanish option present')
 def verify_lang_options_shown(context):
     context.app.header.verify_lang_shown()
+
+@then('Verify Your list is present')
+def verify_create_option_shown(context):
+    context.app.header.verify_option_shown()
+
+
+
+@then('Verify {category} department is selected')
+def verify_selected_dept(context, category):
+    context.app.search_results_page.verify_selected_dept(category)
+
+
 
 
 # expected_result = 'Sign in'

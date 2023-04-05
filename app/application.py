@@ -15,4 +15,4 @@ class Application:
         self.search_results_page = SearchResultsPage(self.driver)
         self.signin_page = Signin(self.driver)
         self.cart_items_page = CartItems(self.driver)
-        self.base_page = Page(self.driver)
+        #self.base_page = Page(self.driver)

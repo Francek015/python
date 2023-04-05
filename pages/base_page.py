@@ -6,10 +6,7 @@ class Page:
 
     def __init__(self, driver):
         self.driver = driver
-
-    def __int__(self, driver):
         self.wait = WebDriverWait(self.driver, 15)
-        self.driver = driver
         self.base_url = 'https://www.amazon.com/'
 
     def open_url(self, url):
